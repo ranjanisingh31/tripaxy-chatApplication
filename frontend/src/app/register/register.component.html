@@ -23,6 +23,7 @@
                             <input type="email" matInput formControlName="email" />
                         </mat-form-field>
                     </li>
+
                     <li>
                         <mat-form-field class="form" appearance="outline">
                             <mat-label>Password</mat-label>
@@ -32,6 +33,19 @@
                                     }}</mat-icon>
                         </mat-form-field>
 
+                    </li>
+                    <li>
+                        <mat-form-field class="form" appearance="outline">
+                            <mat-label>User Type</mat-label>
+                            <mat-select formControlName="type">
+                                <mat-option>--None--
+                                </mat-option>
+                                <mat-option value="customer">Customer
+                                </mat-option>
+                                <mat-option value="business manager">Business Manager
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
                     </li>
 
                 </ul>

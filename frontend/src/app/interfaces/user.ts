@@ -4,5 +4,6 @@ export interface user {
     password: string;
     message: string;
     token: string;
+    type: string;
 
 }

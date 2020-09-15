@@ -59,7 +59,7 @@ router.post("/login", (req, res) => {
                         subject: data._id
                     };
                     let token = jwt.sign(payload, "registerKey");
-                    res.status(200).send({ token: token, message: "LoggedIn!!!" });
+                    res.status(200).send({ token: token, message: "LoggedIn!!!", name: data.name, email: data.email, type: data.type });
                 }
             }
         }

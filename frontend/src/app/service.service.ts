@@ -13,6 +13,10 @@ export class ServiceService {
   private base_url = "http://localhost:3000/api/";
 
 
+  public userName: string = '';
+  public userEmail: string = '';
+  public userType: string = '';
+
   //register
   registerUser(userData): Observable<user> {
     return this.http.post<user>(this.base_url + "register", userData);
